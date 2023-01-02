@@ -1,18 +1,18 @@
 def add(x, y):
-  pass
+    return x + y
 
 
 def subtract(x, y):
-  pass
+    pass
 
 
 def multiply(x, y):
-  pass
+    pass
 
 
 def divide(x, y):
-  pass
+    pass
 
 
 def square(x):
-  pass
+    pass
