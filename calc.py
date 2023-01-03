@@ -16,3 +16,7 @@ def divide(x, y):
 
 def square(x):
     return x * x
+
+
+def average(x):
+    return sum(x)/len(x)
