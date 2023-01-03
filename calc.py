@@ -20,7 +20,3 @@ def square(x):
 
 def average(x):
     return sum(x)/len(x)
-
-
-def cube(x):
-    return x
