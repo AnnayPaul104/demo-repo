@@ -1,3 +1,6 @@
+import math
+
+
 def add(x, y):
     return x + y
 
@@ -24,3 +27,7 @@ def average(x):
 
 def cube(x):
     return x * x * x
+
+
+def sqrt(x):
+    return math.sqrt(x)
