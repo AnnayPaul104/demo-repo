@@ -31,3 +31,7 @@ def cube(x):
 
 def sqrt(x):
     return math.sqrt(x)
+
+
+def exponent(x, b):
+    return math.pow(x, b)
