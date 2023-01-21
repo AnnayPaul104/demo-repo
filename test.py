@@ -25,9 +25,12 @@ class TestOperations(TestCase):
         b = random.randint(1, 100_000)
         self.assertEqual(divide(a, b), a / b)
 
+    def test_all(self):
+        self.test_is_difference()
+        self.test_is_product()
+        self.test_is_quotient()
+        self.test_is_sum()
+
 
 test = TestOperations()
-test.test_is_sum()
-test.test_is_difference()
-test.test_is_product()
-test.test_is_quotient()
+test.test_all()
