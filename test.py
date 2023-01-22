@@ -1,4 +1,4 @@
-import unittest
+import time
 from unittest import TestCase
 import random
 from calc import add, subtract, divide, multiply
@@ -31,6 +31,12 @@ class TestOperations(TestCase):
         self.test_is_quotient()
         self.test_is_sum()
 
+    def test_exhaustive(self):
+        start = time.time()
+        for i in range(1000000):
+            self.test_all()
+        print(f'Execution Time: {round(time.time()-start, 3)} seconds')
+
 
 test = TestOperations()
-test.test_all()
+test.test_exhaustive()
