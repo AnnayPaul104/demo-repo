@@ -1,7 +1,7 @@
 import time
 from unittest import TestCase
 import random
-from calc import add, subtract, divide, multiply, square
+from calc import add, subtract, divide, multiply, square, cube, exponent
 
 
 class TestOperations(TestCase):
@@ -29,12 +29,17 @@ class TestOperations(TestCase):
         a = random.randint(1, 100_000)
         self.assertEqual(square(a), a * a)
 
+    def test_is_cube(self):
+        a = random.randint(1, 100_000)
+        self.assertEqual(cube(a), a * a * a)
+
     def test_all(self):
         self.test_is_difference()
         self.test_is_product()
         self.test_is_quotient()
         self.test_is_sum()
         self.test_is_square()
+        self.test_is_cube()
 
     def test_exhaustive(self):
         start = time.time()
