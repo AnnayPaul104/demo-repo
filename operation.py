@@ -1,10 +1,10 @@
 from calc import add, multiply, subtract, divide, square, cube, average, exponent
 
-print(add(10, 5))
-print(multiply(10, 5))
-print(subtract(10, 5))
-print(divide(10, 5))
-print(square(5))
-print(cube(5))
-print(average([4, 4, 4, 4]))
-print(exponent(5, 3))
+print('5 + 10 =', add(10, 5))
+print('10 X 5 =', multiply(10, 5))
+print('10 % 5 =', subtract(10, 5))
+print('10 - 5 =', divide(10, 5))
+print(' 5 ^ 2 =', square(5))
+print(' 5 ^ 3 =', cube(5))
+print(' 5 ^ 3 =', exponent(5, 3))
+print('Average of : 4, 4, 4, 4 =', average([4, 4, 4, 4]))
