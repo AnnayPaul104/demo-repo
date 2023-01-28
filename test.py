@@ -33,6 +33,10 @@ class TestOperations(TestCase):
         a = random.randint(1, 100_000)
         self.assertEqual(cube(a), a * a * a)
 
+    def test_is_exponent(self):
+        a = random.randint(1, 100_000)
+        self.assertEqual(exponent(a, 3), cube(a))
+
     def test_all(self):
         self.test_is_difference()
         self.test_is_product()
@@ -40,6 +44,7 @@ class TestOperations(TestCase):
         self.test_is_sum()
         self.test_is_square()
         self.test_is_cube()
+        self.test_is_exponent()
 
     def test_exhaustive(self):
         start = time.time()
