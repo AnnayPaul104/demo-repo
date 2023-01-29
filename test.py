@@ -1,7 +1,7 @@
 import time
 from unittest import TestCase
 import random
-from calc import add, subtract, divide, multiply, square, cube, exponent
+from calc import add, subtract, divide, multiply, square, cube, exponent, average
 
 
 class TestOperations(TestCase):
@@ -45,6 +45,13 @@ class TestOperations(TestCase):
         self.test_is_square()
         self.test_is_cube()
         self.test_is_exponent()
+        self.test_average()
+
+    def test_average(self):
+        li = [random.randint(1, 100_000) for x in range(100)]
+        total = sum(li)
+        n = len(li)
+        self.assertEqual(average(li), total/n)
 
     def test_exhaustive(self):
         start = time.time()
